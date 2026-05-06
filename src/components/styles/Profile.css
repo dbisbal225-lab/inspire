@@ -1,0 +1,423 @@
+.profile-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e8f0f7 100%);
+  min-height: 100vh;
+  position: relative;
+}
+
+.profile-header {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #00a8cc 0%, #0088aa 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 4px 16px rgba(0, 168, 204, 0.3);
+}
+
+.avatar-initial {
+  font-size: 2.5rem;
+}
+
+.header-info {
+  flex: 1;
+}
+
+.header-info h1 {
+  color: #1a3a52;
+  margin: 0 0 5px 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.age-location {
+  color: #5a7a8f;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.edit-btn {
+  padding: 12px 25px;
+  border-radius: 8px;
+  border: 2px solid #00a8cc;
+  background: white;
+  color: #00a8cc;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.edit-btn:hover {
+  background: #f0f8fb;
+  transform: translateY(-2px);
+}
+
+.profile-section {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  margin-bottom: 25px;
+}
+
+.profile-section h2 {
+  color: #1a3a52;
+  margin: 0 0 25px 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.profile-item {
+  background: #f8fafb;
+  border-radius: 10px;
+  padding: 15px;
+  border-left: 4px solid #00a8cc;
+}
+
+.profile-item label {
+  color: #5a7a8f;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.profile-item p {
+  color: #1a3a52;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.medical-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.medical-card {
+  background: linear-gradient(135deg, #f8fafb 0%, #f0f5fb 100%);
+  border-radius: 12px;
+  padding: 20px;
+  border-left: 5px solid #00a8cc;
+}
+
+.medical-card h3 {
+  color: #1a3a52;
+  margin: 0 0 15px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.medical-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0, 168, 204, 0.1);
+}
+
+.medical-item:last-child {
+  border-bottom: none;
+}
+
+.medical-item span {
+  color: #5a7a8f;
+  font-size: 0.9rem;
+}
+
+.medical-item strong {
+  color: #1a3a52;
+  font-weight: 600;
+}
+
+.conditions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.condition-tag {
+  background: #e8f4f8;
+  color: #00a8cc;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-block;
+  width: fit-content;
+}
+
+.doctor-card {
+  background: linear-gradient(135deg, #f8fafb 0%, #f0f5fb 100%);
+  border-radius: 12px;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  border-left: 5px solid #00a8cc;
+}
+
+.doctor-info h3 {
+  color: #1a3a52;
+  margin: 0 0 10px 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.specialty {
+  color: #5a7a8f;
+  margin: 8px 0;
+  font-size: 0.95rem;
+}
+
+.hospital {
+  color: #00a8cc;
+  font-weight: 600;
+  margin: 8px 0 0 0;
+}
+
+.doctor-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-item span {
+  color: #5a7a8f;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-item p {
+  color: #1a3a52;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.lifestyle-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.lifestyle-item {
+  background: linear-gradient(135deg, #f8fafb 0%, #f0f5fb 100%);
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  border-left: 4px solid #00a8cc;
+}
+
+.lifestyle-icon {
+  font-size: 1.8rem;
+  min-width: 45px;
+}
+
+.lifestyle-item h4 {
+  color: #1a3a52;
+  margin: 0 0 5px 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.lifestyle-item p {
+  color: #5a7a8f;
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.profile-actions {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.btn-primary, .btn-secondary {
+  padding: 12px 25px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #00a8cc 0%, #0088aa 100%);
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 168, 204, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 168, 204, 0.4);
+}
+
+.btn-secondary {
+  background: white;
+  color: #00a8cc;
+  border: 2px solid #00a8cc;
+}
+
+.btn-secondary:hover {
+  background: #f0f8fb;
+}
+
+/* ESTILOS PARA BADGE DE HOSPITALIZACIÓN */
+.hospitalization-badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+  animation: slideInRight 0.5s ease-out;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.badge-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(10px);
+}
+
+.badge-hospitalized {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+}
+
+.badge-not-hospitalized {
+  background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+}
+
+.badge-icon {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.badge-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.badge-status {
+  font-weight: 700;
+  color: white;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.badge-floor {
+  color: rgba(255, 255, 255, 0.95);
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.badge-date {
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0;
+  font-size: 0.75rem;
+}
+
+.badge-message {
+  color: rgba(255, 255, 255, 0.95);
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .hospitalization-badge {
+    position: relative;
+    top: 0;
+    right: 0;
+    margin-bottom: 20px;
+  }
+
+  .profile-container {
+    padding: 20px 10px;
+  }
+
+  .profile-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-info h1 {
+    font-size: 1.5rem;
+  }
+
+  .avatar {
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
+  }
+
+  .medical-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .doctor-card {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .lifestyle-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-actions {
+    flex-direction: column;
+  }
+
+  .btn-primary, .btn-secondary {
+    width: 100%;
+  }
+}

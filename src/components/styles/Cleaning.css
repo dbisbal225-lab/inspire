@@ -1,0 +1,292 @@
+.cleaning-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e8f0f7 100%);
+  min-height: 100vh;
+}
+
+.cleaning-header {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.cleaning-header h1 {
+  font-size: 2.5rem;
+  color: #1a3a52;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.cleaning-subtitle {
+  color: #5a7a8f;
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.progress-section {
+  margin-bottom: 40px;
+}
+
+.progress-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.progress-card h3 {
+  color: #1a3a52;
+  margin: 0 0 15px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 30px;
+  background: #e8f0f7;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #2ecc71 0%, #27ae60 100%);
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  color: #5a7a8f;
+  font-size: 0.95rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+.cleaning-tips {
+  margin-bottom: 40px;
+}
+
+.cleaning-tips h2 {
+  color: #1a3a52;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.tip-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.tip-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.tip-emoji {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.tip-card h4 {
+  color: #1a3a52;
+  margin: 10px 0 5px 0;
+  font-weight: 600;
+}
+
+.tip-card p {
+  color: #5a7a8f;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.tasks-list {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+
+.tasks-list h2 {
+  color: #1a3a52;
+  margin-bottom: 25px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.task-item {
+  border: 1px solid #e0e8f0;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.task-item.completed {
+  opacity: 0.7;
+}
+
+.task-header {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding: 15px;
+  background: linear-gradient(135deg, #f8fafb 0%, #f0f5fb 100%);
+}
+
+.task-checkbox {
+  margin: 0;
+}
+
+.task-checkbox input {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #00a8cc;
+}
+
+.task-icon {
+  font-size: 1.8rem;
+  min-width: 40px;
+}
+
+.task-main-info {
+  flex: 1;
+}
+
+.task-main-info h3 {
+  color: #1a3a52;
+  margin: 0 0 5px 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.task-frequency {
+  color: #5a7a8f;
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+.task-meta {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.importance {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.importance.alta {
+  background: #ffe0e0;
+  color: #cc0000;
+}
+
+.importance.media {
+  background: #fff4e0;
+  color: #cc8800;
+}
+
+.time-estimate {
+  color: #7a8f9d;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.task-tips {
+  padding: 15px;
+  background: #f9fafb;
+  border-top: 1px solid #e0e8f0;
+  color: #5a7a8f;
+  font-size: 0.9rem;
+}
+
+.task-tips p {
+  margin: 0;
+}
+
+.cleaning-actions {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn-primary, .btn-secondary {
+  padding: 12px 25px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #00a8cc 0%, #0088aa 100%);
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 168, 204, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 168, 204, 0.4);
+}
+
+.btn-secondary {
+  background: white;
+  color: #00a8cc;
+  border: 2px solid #00a8cc;
+}
+
+.btn-secondary:hover {
+  background: #f0f8fb;
+}
+
+@media (max-width: 768px) {
+  .cleaning-container {
+    padding: 20px 10px;
+  }
+
+  .cleaning-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .tips-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .task-header {
+    flex-wrap: wrap;
+  }
+
+  .task-meta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cleaning-actions {
+    flex-direction: column;
+  }
+
+  .btn-primary, .btn-secondary {
+    width: 100%;
+  }
+}
